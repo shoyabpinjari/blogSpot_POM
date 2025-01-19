@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-class Login:
+class LoginPage:
     textbox_username_id = "name"
     textboox_email_id = "email"
     textbox_phone_id = "phone"
@@ -26,4 +26,4 @@ class Login:
         self.driver.find_element(By.ID,self.textbox_address_id).clear()
         self.driver.find_element(By.ID, self.textbox_address_id).send_keys(address)
 
-    
+
